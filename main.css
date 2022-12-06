@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container{
+    padding: 16px 0;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+header{
+    max-width: 100%;
+    background-color: rgb(172, 172, 172);
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav li a:hover{
+    color: black;
+}
+
+.container, h2, .produtos{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+section .container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 56px;
+}
+
+section h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.produto button{
+    width: 250px;
+    padding: 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.produto button:hover{
+    background-color: black;
+}
+
+.container img{
+    height: 350px;
+}
+
+.produtos img{
+    height: 250px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 56px;
+}
+
+.produto a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 90%;
+        align-items: center;
+    }
+
+    .produtos{
+        display: block;
+        margin-left: 60px;
+    }
+
+    .produto{
+        margin-bottom: 40px;
+    }
+
+    section h2{
+        margin-left: 125px;
+    }
+
+    section .container{
+        display: block;
+    }
+
+    section .container h2{
+        margin-left: 85px;
+    }
+
+    .container img{
+        height: 225px;
+        margin-bottom: 16px;
+    }
+    
+    .produtos img{
+        height: 250px;
+    }
+
+    header nav li a:hover{
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    section .container{
+        display: block;
+    }
+
+    .estoque h2{
+        margin-left: 40px;
+    }
+
+    .produto{
+        margin-bottom: 30px;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-left: 50px;
+    }
+
+    .container img{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+}
