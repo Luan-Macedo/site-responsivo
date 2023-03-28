@@ -86,30 +86,28 @@ section h2{
 }
 
 @media screen and (max-width: 767px){
+
     .container{
+        display: flex;
         max-width: 90%;
         align-items: center;
     }
 
     .produtos{
         display: block;
-        margin-left: 60px;
+        padding: 0 65px
     }
 
-    .produto{
-        margin-bottom: 40px;
+    .estoque h2{
+        padding: 0 20px
     }
 
-    section h2{
-        margin-left: 125px;
+    .produto button{
+        margin-bottom: 50px;
     }
 
     section .container{
         display: block;
-    }
-
-    section .container h2{
-        margin-left: 85px;
     }
 
     .container img{
@@ -135,18 +133,22 @@ section h2{
         display: block;
     }
 
-    .estoque h2{
-        margin-left: 40px;
-    }
-
     .produto{
         margin-bottom: 30px;
+        padding: 80px;
+    }
+
+    .estoque h2{
+    padding: 0 50px
+    }
+
+    .produto h2{
+        width: 100%;
     }
 
     .produtos{
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        margin-left: 50px;
     }
 
     .container img{
